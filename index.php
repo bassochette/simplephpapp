@@ -24,6 +24,7 @@
     <h1>Libre en fêtes 2014</h1>
    
     <H2>Un site ultra trop bien pour la démo Opswork</H2>
+    <h2><?php echo gethostname(); ?></h2>
   </div>
   </body>
 </html>
