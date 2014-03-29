@@ -25,12 +25,12 @@
    
     <H2>Un site ultra trop bien pour la démo Opswork</H2>
     <h2><?php echo gethostname(); ?></h2>
-    <P>
+    <h3>
     <?php
-      $message=shell_exec("free -m | grep Swap | awk 'BEGIN{} {print "<span class=\"label label-info\">$1</span> <span class=\"badge badge-info\">$2</span>"}'");
+      $message=shell_exec("free -m | grep Swap ");
       print_r($message);
     ?> 
-    <P> 
+    <h3> 
   </div>
   </body>
 </html>
