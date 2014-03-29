@@ -27,7 +27,7 @@
     <h2><?php echo gethostname(); ?></h2>
     <P>
     <?php
-      $message=shell_exec("free -m | grep Swap | awk 'BEGIN END {print <span class=\"label label-info\">$1</span> <span class="badge badge-info">$2</span>$}'");
+      $message=shell_exec("free -m | grep Swap | awk 'BEGIN{} {print "<span class=\"label label-info\">$1</span> <span class=\"badge badge-info\">$2</span>"}'");
       print_r($message);
     ?> 
     <P> 
