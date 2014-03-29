@@ -25,6 +25,11 @@
    
     <H2>Un site ultra trop bien pour la démo Opswork</H2>
     <h2><?php echo gethostname(); ?></h2>
+
+    <?php
+      $message=shell_exec("/var/www/scripts/testscript 2>&1");
+      print_r($message);
+    ?>  
   </div>
   </body>
 </html>
