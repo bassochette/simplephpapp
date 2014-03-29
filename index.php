@@ -27,7 +27,7 @@
     <h2><?php echo gethostname(); ?></h2>
 
     <?php
-      $message=shell_exec("top -b -n 1");
+      $message=shell_exec("free -m");
       print_r($message);
     ?>  
   </div>
