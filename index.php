@@ -27,7 +27,7 @@
     <h2><?php echo gethostname(); ?></h2>
     <P>
     <?php
-      $message=shell_exec("free -m | grep swap");
+      $message=shell_exec("free -m | grep Swap");
       print_r($message);
     ?> 
     <P> 
